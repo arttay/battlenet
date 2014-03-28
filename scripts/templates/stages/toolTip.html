@@ -1,0 +1,80 @@
+<div class="toolTip">
+	<div class="toolTip-name"><%= name %></div>
+
+	<% if(nameDescription != "") { %>
+		<div class="toolTip-raidRank">description: <%= nameDescription %></div>
+	<% } %>
+
+	<div class="toolTip-itemLevel">item level: <%= itemLevel %></div>
+	<div class="toolTip-bind">item bind: <%= itemBind %></div>
+	<div class="toolTip-slot">slot: <%= inventoryType %></div>
+
+	<% if(baseArmor) { %>
+		<div class="toolTip-armor">item bind: <%= baseArmor %></div>
+	<% } %>
+	<% if(bonusStats) { %>
+		<% _.each(bonusStats, function(value, key) { %>
+			<% if(value.stat == 4) { %>
+				<div class="toolTip-str">str: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 5) { %>
+				<div class="toolTip-int">int: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 6) { %>
+				<div class="toolTip-spirit">spirit: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 7) { %>
+				<div class="toolTip-stam">stam: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 36) { %>
+				<div class="toolTip-haste">haste: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 32) { %>
+				<div class="toolTip-crit">crit: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 49) { %>
+				<div class="toolTip-mastery">mastery: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 45) { %>
+				<div class="toolTip-spellpower">spellpower: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 14) { %>
+				<div class="toolTip-parry">parry: <%- value.amount %></div>
+			<% } %>
+			<% if(value.stat == 31) { %>
+				<div class="toolTip-hit">hit: <%- value.amount %></div>
+			<% } %>
+			
+		<% }); %>
+
+	<% } %>
+
+	<% if(typeof gemBonus !== 'undefined') { %>
+		<div class="toolTip-gem1">gem1: <%= gemBonus.name %></div>
+	<% } %>
+
+
+	<% if(itemSpells.length != 0) { %>
+		<div class="toolTip-spell">spell: <%= itemSpells[0].spell.description %></div>
+	<% } %>
+	
+
+
+</div>
+
+<!--
+	4: str
+	5:int
+	6: spirit
+	7: stam
+	36: haste
+	32: crit
+	49: mastery
+	45: spellpower
+	14: pary
+	31: hit
+	31: exp
+
+
+	-->
+

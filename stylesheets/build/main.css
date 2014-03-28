@@ -1,0 +1,16 @@
+.head, .neck, .shoulder, .back, .chest, .wrist {
+  display: block;
+  width: 60px;
+  cursor: pointer;
+}
+.head img, .neck img, .shoulder img, .back img, .chest img, .wrist img {
+  cursor: pointer;
+}
+
+.itemTip .toolTip {
+  padding: 10px;
+  background: black;
+  /* The Fallback */
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}

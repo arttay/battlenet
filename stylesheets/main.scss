@@ -1,0 +1,19 @@
+.head, .neck, .shoulder, .back, .chest, .wrist {
+	display: block;
+	width: 60px;
+	cursor: pointer;
+	img {
+		cursor: pointer;
+	}
+}
+
+.itemTip {
+	.toolTip {
+		padding: 10px;
+		background: rgb(0, 0, 0); /* The Fallback */
+   		background: rgba(0, 0, 0, 0.8); 
+   		color: #fff;
+
+
+	}
+}
