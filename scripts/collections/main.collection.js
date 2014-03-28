@@ -76,13 +76,13 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                   obj.arena2v2weeklyPlayed = data.pvp.brackets.ARENA_BRACKET_2v2.weeklyPlayed;
                   obj.arena2v2weeklyWon = data.pvp.brackets.ARENA_BRACKET_2v2.weeklyWon;
                                     
-                  obj.arena5v5rating = data.pvp.brackets.ARENA_BRACKED_5v5.rating;
+                 /* //obj.arena5v5rating = data.pvp.brackets.ARENA_BRACKED_5v5.rating;
                   obj.arena5v5seasonLost = data.pvp.brackets.ARENA_BRACKED_5v5.seasonLost;
                   obj.arena5v5seasonPlayed = data.pvp.brackets.ARENA_BRACKED_5v5.seasonPlayed;
                   obj.arena5v5seasonWon = data.pvp.brackets.ARENA_BRACKED_5v5.seasonWon;
                   obj.arena5v5weeklyLost = data.pvp.brackets.ARENA_BRACKED_5v5.weeklyLost;
                   obj.arena5v5weeklyPlayed = data.pvp.brackets.ARENA_BRACKED_5v5.weeklyPlayed;
-                  obj.arena5v5weeklyWon = data.pvp.brackets.ARENA_BRACKED_5v5.weeklyWon;
+                  obj.arena5v5weeklyWon = data.pvp.brackets.ARENA_BRACKED_5v5.weeklyWon;*/
                          
                 
                   obj.guildName = data.guild.name;
