@@ -36,9 +36,6 @@ define([
      itemTip.className = "itemTip";
     document.body.appendChild(itemTip);
 
-
-
-
       this.ItemCollection = new ItemCollection([], {itemID: this.collection.headID});
       if(this.collection.gem0){
         this.gem0 = new ItemCollection([], {itemID: this.collection.gem0});

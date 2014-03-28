@@ -37,6 +37,52 @@ define([
     document.body.appendChild(itemTip);
       
       this.ItemCollection = new ItemCollection([], {itemID: this.collection.chestID});
+            if(this.collection.gem0){
+        this.gem0 = new ItemCollection([], {itemID: this.collection.gem0});
+         this.gem0.fetch({
+          success : function(collection, response) {
+          
+            console.log(response);
+   
+          },
+          error : function(collection, response) {
+            // code here
+          }
+        });
+      }
+      if(this.collection.gem1){
+        this.gem1 = new ItemCollection([], {itemID: this.collection.gem1});
+         this.gem1.fetch({
+          success : function(collection, response) {
+            that.gem1Info = new Object();
+            var data = response;
+            if(data.gemInfo.bonus){
+              that.gem1Info.gemBonus = data.gemInfo.bonus;
+            }
+          },
+          error : function(collection, response) {
+            // code here
+          }
+        });
+      }
+      if(this.collection.gem2){
+        this.gem2 = new ItemCollection([], {itemID: this.collection.headID});
+        this.gem2.fetch({
+          success : function(collection, response) {
+           that.gem2Info = new Object();
+            var data = response;
+            if(data.gemInfo.bonus){
+              that.gem2Info.gemBonus = data.gemInfo.bonus;
+            }
+           
+   
+          },
+          error : function(collection, response) {
+            // code here
+          }
+        });
+      }
+      
       this.ItemCollection.fetch({
           success : function(collection, response) {
             console.log(response);
@@ -49,7 +95,21 @@ define([
         });
     },
         createTooltip: function(e){
-     this.col = e;
+         //console.log(e);
+      this.col = e;
+      self = this
+      if(that.gem1Info){
+        console.log(that.gem1Info);
+      }
+      if(that.gem2Info){
+        console.log(that.gem2Info);
+      }
+      if(that.gem3Info){
+        console.log(that.gem3Info);
+      }
+      this.combinedObjs = $.extend(this.collection, e, that.gem1Info);
+      //console.log(this.combinedObjs);
+     // console.log(that.gem1Info);
 
      //this.combinedObjs = $.extend(this.collection, e);
       //console.log(this.combinedObjs);
@@ -57,7 +117,7 @@ define([
 
     $(document).mousemove(function(e){
     
-        $(".itemTip").html(that.template1(that.col));
+        $(".itemTip").html(that.template1(self.combinedObjs));
         $(".itemTip").css({
             position: function(index, value){
               return "fixed";
