@@ -37,7 +37,7 @@ define([
     document.body.appendChild(itemTip);
 
       this.ItemCollection = new ItemCollection([], {itemID: this.collection.headID});
-      if(this.collection.gem0){
+      if(this.collection.headGem0){
         this.gem0 = new ItemCollection([], {itemID: this.collection.gem0});
          this.gem0.fetch({
           success : function(collection, response) {
@@ -50,7 +50,7 @@ define([
           }
         });
       }
-      if(this.collection.gem1){
+      if(this.collection.headGem1){
         this.gem1 = new ItemCollection([], {itemID: this.collection.gem1});
          this.gem1.fetch({
           success : function(collection, response) {
@@ -65,7 +65,7 @@ define([
           }
         });
       }
-      if(this.collection.gem2){
+      if(this.collection.headGem2){
         this.gem2 = new ItemCollection([], {itemID: this.collection.headID});
         this.gem2.fetch({
           success : function(collection, response) {

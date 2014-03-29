@@ -244,6 +244,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.back.name){
                               obj.backName = data.items.back.name;
                         }
+                        if(data.items.back.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.back.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.back.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.backGem0 = data.items.back.tooltipParams.gem0;
+                               }
+                              if(data.items.back.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.backGem1 = data.items.back.tooltipParams.gem1;
+                               }
+                              if(data.items.back.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.backGem2 = data.items.back.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end back
 
                   if(data.items.feet){
@@ -262,6 +276,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.feet.name){
                               obj.feetName = data.items.feet.name;
                         }
+                          if(data.items.feet.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.feet.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.feet.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.feetGem0 = data.items.feet.tooltipParams.gem0;
+                               }
+                              if(data.items.feet.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.feetGem1 = data.items.feet.tooltipParams.gem1;
+                               }
+                              if(data.items.feet.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.feetGem2 = data.items.feet.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end feet
 
                   if(data.items.chest){
@@ -285,15 +313,15 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                               console.log("tooltips");
                               console.log(obj.chestToolTipParams);
                               if(data.items.chest.tooltipParams.hasOwnProperty("gem0")){
-                                    obj.gem0 = data.items.chest.tooltipParams.gem0;
+                                    obj.chestGem0 = data.items.chest.tooltipParams.gem0;
                                }
                               if(data.items.chest.tooltipParams.hasOwnProperty("gem1")){
-                                   obj.gem1 = data.items.chest.tooltipParams.gem1;
+                                   obj.chestGem1 = data.items.chest.tooltipParams.gem1;
                                }
                               if(data.items.chest.tooltipParams.hasOwnProperty("gem2")){
-                                   obj.gem2 = data.items.chest.tooltipParams.gem2;
+                                   obj.chestGem2 = data.items.chest.tooltipParams.gem2;
                                }
-                        }
+                        }//end has tooltipParams
 
                   }//end chest
 
@@ -313,6 +341,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.finger1.name){
                               obj.finger1Name = data.items.finger1.name;
                         }
+                          if(data.items.finger1.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.finger1.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.finger1.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.finger1Gem0 = data.items.finger1.tooltipParams.gem0;
+                               }
+                              if(data.items.finger1.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.finger1Gem1 = data.items.finger1.tooltipParams.gem1;
+                               }
+                              if(data.items.finger1.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.finger1Gem2 = data.items.finger1.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
                   if(data.items.finger2){
                         if(data.items.finger2.armor){
@@ -330,6 +372,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.finger2.name){
                               obj.finger2Name = data.items.finger2.name;
                         }
+                          if(data.items.finger2.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.finger2.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.finger2.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.finger2Gem0 = data.items.finger2.tooltipParams.gem0;
+                               }
+                              if(data.items.finger2.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.finger2Gem1 = data.items.finger2.tooltipParams.gem1;
+                               }
+                              if(data.items.finger2.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.finger2Gem2 = data.items.finger2.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
                   if(data.items.hands){
@@ -348,6 +404,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.hands.name){
                               obj.handsName = data.items.hands.name;
                         }
+                          if(data.items.hands.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.hands.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.hands.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.handsGem0 = data.items.hands.tooltipParams.gem0;
+                               }
+                              if(data.items.hands.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.handsGem1 = data.items.hands.tooltipParams.gem1;
+                               }
+                              if(data.items.hands.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.handsGem2 = data.items.hands.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
                   if(data.items.head){
@@ -366,6 +436,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.head.name){
                               obj.headName = data.items.head.name;
                         }
+                          if(data.items.head.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.head.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.head.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.headGem0 = data.items.head.tooltipParams.gem0;
+                               }
+                              if(data.items.head.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.headGem1 = data.items.head.tooltipParams.gem1;
+                               }
+                              if(data.items.head.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.headGem2 = data.items.head.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
 
@@ -385,6 +469,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.legs.name){
                               obj.legsName = data.items.legs.name;
                         }
+                          if(data.items.legs.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.legs.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.legs.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.legsGem0 = data.items.legs.tooltipParams.gem0;
+                               }
+                              if(data.items.legs.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.legsGem1 = data.items.legs.tooltipParams.gem1;
+                               }
+                              if(data.items.legs.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.legsGem2 = data.items.legs.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
                   if(data.items.mainHand){
@@ -403,6 +501,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.mainHand.name){
                               obj.mainHandName = data.items.mainHand.name;
                         }
+                          if(data.items.mainHand.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.mainHand.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.mainHand.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.mainHandGem0 = data.items.mainHand.tooltipParams.gem0;
+                               }
+                              if(data.items.mainHand.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.mainHandGem1 = data.items.mainHand.tooltipParams.gem1;
+                               }
+                              if(data.items.mainHand.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.mainHandGem2 = data.items.mainHand.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
 
@@ -422,6 +534,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.neck.name){
                               obj.neckName = data.items.neck.name;
                         }
+                          if(data.items.neck.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.neck.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.neck.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.neckGem0 = data.items.neck.tooltipParams.gem0;
+                               }
+                              if(data.items.neck.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.neckGem1 = data.items.neck.tooltipParams.gem1;
+                               }
+                              if(data.items.neck.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.neckGem2 = data.items.neck.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
             }//end items
 
@@ -441,6 +567,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.offHand.name){
                               obj.offHandName = data.items.offHand.name;
                         }
+                          if(data.items.offHand.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.offHand.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.offHand.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.offHandGem0 = data.items.offHand.tooltipParams.gem0;
+                               }
+                              if(data.items.offHand.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.offHandGem1 = data.items.offHand.tooltipParams.gem1;
+                               }
+                              if(data.items.offHand.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.offHandGem2 = data.items.offHand.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
 
@@ -460,6 +600,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.shoulder.name){
                               obj.shoulderName = data.items.shoulder.name;
                         }
+                          if(data.items.shoulder.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.shoulder.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.shoulder.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.shoulderGem0 = data.items.shoulder.tooltipParams.gem0;
+                               }
+                              if(data.items.shoulder.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.shoulderGem1 = data.items.shoulder.tooltipParams.gem1;
+                               }
+                              if(data.items.shoulder.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.shoulderGem2 = data.items.shoulder.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
 
 
@@ -519,6 +673,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.waist.name){
                               obj.waistName = data.items.finger1.name;
                         }
+                          if(data.items.waist.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.waist.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.waist.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.waistGem0 = data.items.waist.tooltipParams.gem0;
+                               }
+                              if(data.items.waist.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.waistGem1 = data.items.waist.tooltipParams.gem1;
+                               }
+                              if(data.items.waist.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.waistGem2 = data.items.waist.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end finger1
                    if(data.items.wrist){
                         if(data.items.wrist.armor){
@@ -536,6 +704,20 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
                         if(data.items.wrist.name){
                               obj.finger1Name = data.items.wrist.name;
                         }
+                          if(data.items.wrist.hasOwnProperty("tooltipParams")){
+                              obj.chestToolTipParams = data.items.wrist.tooltipParams;
+                              console.log("tooltips");
+                              console.log(obj.chestToolTipParams);
+                              if(data.items.wrist.tooltipParams.hasOwnProperty("gem0")){
+                                    obj.wristGem0 = data.items.wrist.tooltipParams.gem0;
+                               }
+                              if(data.items.wrist.tooltipParams.hasOwnProperty("gem1")){
+                                   obj.wristGem1 = data.items.wrist.tooltipParams.gem1;
+                               }
+                              if(data.items.wrist.tooltipParams.hasOwnProperty("gem2")){
+                                   obj.wristGem2 = data.items.wrist.tooltipParams.gem2;
+                               }
+                        }//end has tooltipParams
                   }//end wrist
                
 
@@ -543,7 +725,7 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
 
 
 
-                 
+                 console.log(obj);
       
 
                   R.push(obj);

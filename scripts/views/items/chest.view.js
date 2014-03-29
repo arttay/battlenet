@@ -37,9 +37,9 @@ define([
     document.body.appendChild(itemTip);
       
       this.ItemCollection = new ItemCollection([], {itemID: this.collection.chestID});
-            if(this.collection.gem0){
-        this.gem0 = new ItemCollection([], {itemID: this.collection.gem0});
-         this.gem0.fetch({
+            if(this.collection.chestGem0){
+        this.chestGem0 = new ItemCollection([], {itemID: this.collection.chestGem0});
+         this.chestGem0.fetch({
           success : function(collection, response) {
           
             console.log(response);
@@ -50,9 +50,9 @@ define([
           }
         });
       }
-      if(this.collection.gem1){
-        this.gem1 = new ItemCollection([], {itemID: this.collection.gem1});
-         this.gem1.fetch({
+      if(this.collection.chestGem1){
+        this.chestGem1 = new ItemCollection([], {itemID: this.collection.chestGem1});
+         this.chestGem1.fetch({
           success : function(collection, response) {
             that.gem1Info = new Object();
             var data = response;
@@ -65,9 +65,9 @@ define([
           }
         });
       }
-      if(this.collection.gem2){
-        this.gem2 = new ItemCollection([], {itemID: this.collection.headID});
-        this.gem2.fetch({
+      if(this.collection.chestGem2){
+        this.chestGem2 = new ItemCollection([], {itemID: this.collection.headID});
+        this.chestGem2.fetch({
           success : function(collection, response) {
            that.gem2Info = new Object();
             var data = response;
