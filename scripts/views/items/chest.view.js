@@ -102,18 +102,21 @@ define([
          //console.log(e);
       this.col = e;
       self = this
-      if(that.gem0Info){
+    if(that.gem0Info){
         self.combinedObjs = $.extend(this.collection, e, that.gem0Info);
       }
-      if(that.gem1Info){
+      else if(that.gem1Info){
         console.log(that.gem1Info);
         console.log(that.gem0Info);
 
         self.combinedObjs = $.extend(this.collection, e, that.gem0Info, that.gem1Info);
       }
-      if(that.gem2Info){
+      else if(that.gem2Info){
 
         self.combinedObjs = $.extend(this.collection, e, that.gem0Info, that.gem1Info, that.gem2Info);
+      }
+      else {
+         self.combinedObjs = $.extend(this.collection, e);
       }
       console.log(self.combinedObjs);
       //console.log(this.combinedObjs);

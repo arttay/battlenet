@@ -105,8 +105,7 @@ define([
        //console.log(e);
       this.col = e;
       self = this
-      if(that.gem0Info){
-        console.log("gem0info");
+   if(that.gem0Info){
         self.combinedObjs = $.extend(this.collection, e, that.gem0Info);
       }
       else if(that.gem1Info){
