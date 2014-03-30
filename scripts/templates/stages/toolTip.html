@@ -49,8 +49,14 @@
 
 	<% } %>
 
-	<% if(typeof gemBonus !== 'undefined') { %>
-		<div class="toolTip-gem1">gem1: <%= gemBonus.name %></div>
+	<% if(typeof gem0Bonus !== 'undefined') { %>
+		<div class="toolTip-gem0">gem0: <%= gem0Bonus.name %></div>
+	<% } %>
+	<% if(typeof gem1Bonus !== 'undefined') { %>
+		<div class="toolTip-gem1">gem1: <%= gem1Bonus.name %></div>
+	<% } %>
+	<% if(typeof gem2Bonus !== 'undefined') { %>
+		<div class="toolTip-gem2">gem2: <%= gem2Bonus.name %></div>
 	<% } %>
 
 

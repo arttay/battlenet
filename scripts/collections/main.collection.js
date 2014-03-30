@@ -21,7 +21,7 @@ define(['jquery', 'underscore', 'backbone', 'models/main.model'], function
 
             },
             url: function(){
-            	return "http://us.battle.net/api/wow/character/Alexstrasza/Leica?fields=guild,items,professions,stats,pvp,titles,audit,progression,appearance,talents";
+            	return "http://us.battle.net/api/wow/character/zuljin/Shoosiris?fields=guild,items,professions,stats,pvp,titles,audit,progression,appearance,talents";
             },
             parse: function(data){
             	console.log("parse data");
