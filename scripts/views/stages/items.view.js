@@ -37,7 +37,7 @@ define(['jquery',
       _.each(itemCats, function(value, key){
           this.itemView = new itemView({collection: self.collection, model: value});
       });
-    /*  this.HeadView = new HeadView({collection: this.collection});
+      /*this.HeadView = new HeadView({collection: this.collection});
       this.NeckView = new NeckView({collection: this.collection});
       this.ShoulderView = new ShoulderView({collection: this.collection}); 
       this.BackView = new BackView({collection: this.collection}); 
