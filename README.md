@@ -1,6 +1,6 @@
 battlenet
 =========
-http://art-taylor.net/battlenet/
+http://art-taylor.net/public/battlenet/
 
 
 ..one day I'll finish this....
